@@ -4,6 +4,7 @@ set nocompatible            " get rid of Vi compatibility mode. SET FIRST!
 filetype plugin indent on   " filetype detection[on] plugin[on] indent[on]
 syntax enable               " Turn on syntax highlighting
 colorscheme desert          " set colorscheme
+set number
 set title                   " Put file's name in tab at top of editor window
 :imap kj <Esc>              " Map <ESC> to 'kj'
 set nohlsearch              " Don't continue to highlight searched phrases.
