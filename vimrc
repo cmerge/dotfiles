@@ -9,6 +9,8 @@ set title                   " Put file's name in tab at top of editor window
 :imap kj <Esc>              " Map <ESC> to 'kj'
 nnoremap <C-Tab> :bn<CR>    " Mappings for switching buffers
 nnoremap <C-S-Tab> :bp<CR>  " ---
+nnoremap ; :
+nnoremap : ;
 set nohlsearch              " Don't continue to highlight searched phrases.
 set incsearch               " But do highlight as you type your search.
 set ignorecase              " Make searches case-insensitive.
