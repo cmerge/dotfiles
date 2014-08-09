@@ -1,0 +1,15 @@
+" .vrapperrc
+
+inoremap kj <Esc>
+nnoremap <C-Tab> :bn<CR>
+nnoremap <C-S-Tab> :bp<CR>
+nnoremap ; :
+nnoremap : ;
+map L $
+map H ^
+
+set nohlsearch              " Don't continue to highlight searched phrases.
+set incsearch               " But do highlight as you type your search.
+set ignorecase              " Make searches case-insensitive.
+set smartcase               " searching for a capital letter forces case sensitivity
+set nowrap                  " don't wrap text
