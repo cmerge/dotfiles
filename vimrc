@@ -1,6 +1,7 @@
 " .vimrc
 
 set nocompatible            " get rid of Vi compatibility mode. SET FIRST!
+
 execute pathogen#infect()
 set guifont=Inconsolata\ for\ Powerline:h24
 color slate
@@ -13,19 +14,20 @@ set termencoding=utf-8
 " set guifont=Lucida_Console:h14:cDEFAULT
 filetype plugin indent on   " filetype detection[on] plugin[on] indent[on]
 syntax enable               " Turn on syntax highlighting
-colorscheme desert          " set colorscheme
-inoremap kj <ESC>
+" colorscheme desert          " set colorscheme
+inoremap kj <Esc>
 nnoremap <C-Tab> :bn<CR>
 nnoremap <C-S-Tab> :bp<CR>
 nnoremap ; :
 nnoremap : ;
 vmap <expr>  ++  VMATH_YankAndAnalyse()
 nmap         ++  vip++
-set number
+" set number
 set title                   " Put file's name in tab at top of editor window
 set nohlsearch              " Don't continue to highlight searched phrases.
 set incsearch               " But do highlight as you type your search.
 set ignorecase              " Make searches case-insensitive.
+set smartcase               " searching for a capital letter forces case sensitivity
 set autoindent              " auto-indent
 set tabstop=4               " tab spacing
 set softtabstop=4           " unify -- I'm not really sure what this does yet
