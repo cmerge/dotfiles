@@ -20,6 +20,8 @@ nnoremap <C-Tab> :bn<CR>
 nnoremap <C-S-Tab> :bp<CR>
 nnoremap ; :
 nnoremap : ;
+map H ^
+map L $
 vmap <expr>  ++  VMATH_YankAndAnalyse()
 nmap         ++  vip++
 " set number
