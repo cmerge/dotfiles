@@ -8,7 +8,7 @@ set nocompatible            " get rid of Vi compatibility mode. SET FIRST!
 
 color slate
 
-set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+" set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 
 " Always show statusline
 set laststatus=2
@@ -49,7 +49,7 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 
 " Quick editing
-nnoremap <leader>ev :vsplit ~/.vimrc<cr>
+nnoremap <leader>ev :e ~/dotfiles/vimrc<cr>
 
 " Open/Close a vertical split and put the cursor in it.
 nnoremap <leader>w <C-w>v<C-w>li
