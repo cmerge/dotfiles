@@ -2,11 +2,17 @@
 
 
 filetype off
-call pathogen#infect()
+execute pathogen#infect()
 filetype plugin indent on   " filetype detection[on] plugin[on] indent[on]
 set nocompatible            " get rid of Vi compatibility mode. SET FIRST!
 
 color slate
+
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+
+" Always show statusline
+set laststatus=2
+
 
 set guifont=Inconsolata\ for\ Powerline:h24
 let g:Powerline_symbols = 'fancy'
@@ -20,9 +26,12 @@ set term=xterm-256color
 set termencoding=utf-8
 set list
 set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
+
+let g:airline_powerline_fonts = 1
+
 " set guifont=Lucida_Console:h14:cDEFAULT
 syntax enable               " Turn on syntax highlighting
-" colorscheme desert
+colorscheme desert
 inoremap kj <Esc>
 nnoremap <C-Tab> :bn<CR>
 nnoremap <C-S-Tab> :bp<CR>
