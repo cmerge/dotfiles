@@ -31,7 +31,8 @@ let g:airline_powerline_fonts = 1
 
 " set guifont=Lucida_Console:h14:cDEFAULT
 syntax enable               " Turn on syntax highlighting
-colorscheme desert
+set background=dark         " this is a solarized colorscheme setting
+colorscheme solarized       " was desert
 inoremap kj <Esc>
 nnoremap <C-Tab> :bn<CR>
 nnoremap <C-S-Tab> :bp<CR>
